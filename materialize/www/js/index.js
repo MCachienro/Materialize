@@ -35,3 +35,10 @@ window.onload = (event) => {
     var el = document.getElementsByClassName('tabs');
     var instance = M.Tabs.init(el, options);
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {
+      // specify options here
+    });
+  });
