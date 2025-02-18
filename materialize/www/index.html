@@ -1,54 +1,46 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/index.css" rel="stylesheet" media="screen,projection">
+    
+    <!-- Google Font (Charm) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+       
+    <div id="test-swipe-3" class="col s12 green">
+        <h2>CAMARA</h2>
+    
+        <button id="btnCapture" class="btn waves-effect waves-light">CAMARA "SONRIE"</button>
+        <button id="btnShow" class="btn waves-effect waves-light">Fer foto</button>
+        <video id="video" width="300" height="300" autoplay></video>
+        <p id="ultimafoto">UTLIMA FOTO REALIZADA</p>
+        <canvas id="canvas" style="display:none;"></canvas>
+    
+        <img id="photo" src="">
+    </div>
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Security-Policy" content="default-src https://fonts.googleapis.com 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' ; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/materialize.css">
-        <link
-        href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/index.css">
+    <!-- Scripts -->
+    <script src="cordova.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/index.js"></script>
 
-        
-        <title>Hello World</title>
-    </head>
-    <body>
-        <nav> <!-- navbar content here  --> </nav>
-    <ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-        <div class="background">
-        <img src="gato.jpeg">
-        </div>
-        <a href="#user"><img class="circle" src="gato,jpeg"></a>
-        <a href="#name"><span class="white-text name">Marc Cachinero</span></a>
-        <a href="#email"><span class="white-text email">marccachinero@gmail.com</span></a>
-    </div></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-    </ul>
-<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul id="tabs-swipe-demo" class="tabs">
-            <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
-            <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
-            <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
-          </ul>
-          <div id="test-swipe-1" class="col s12 blue">Test 1</div>
-          <div id="test-swipe-2" class="col s12 red">Test 2</div>
-          <div id="test-swipe-3" class="col s12 green">Test 3</div>
+    <!-- Initialize Tabs -->
 
 
-        <script src="cordova.js"></script>
-        <script src="js/materialize.js"></script>
-        <script src="js/index.js"></script>
-
-    </body>
+</body>
 </html>

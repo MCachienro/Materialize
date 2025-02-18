@@ -1,21 +1,48 @@
-/*
- * ...deixar els continguts que existissin prèviament...
- */
- 
-/* body fix: perquè ocupi tota la pantalla */
-html, body {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: column;
-  }
-   
-  /*
-   * afegir la class tabs-content a cada div de contingut
-   * per solucionar el contingut scollable de cada pestanya
-   */
-  .tabs-content {
-    height: 100%;
-    overflow-y: scroll !important;
-  }
+#photo {
+  width: 300px;
+  height: 200px;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0 auto;
+}
+
+#video {
+  width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  ;}
+
+
+#btnCapture, #btnShow, #ultimafoto,#cam {
+display: flex;
+justify-content: center; 
+align-items: center;     
+margin: 5px auto;    
+text-align: center;
+}
+
+body{
+background-color: rgba(76,175,80);
+}
+
+@media only screen and (max-width: 600px) {
+  #video {
+      width: 150;
+      border-radius: 5px;
+      display: block;
+      margin: 0 auto;
+      ;}
+    
+    #photo {
+      width: 100px;
+      height: 75px;
+      position: absolute;
+      display: block;
+      max-width: 300px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      margin: 0 auto;
+    }}
